@@ -9,7 +9,7 @@ Useful for converting between various file formats.
 Converting a file:
 
 ```bash
-docker run -v $(pwd):/data headless-libreoffice:latest --convert-to csv myfile.ods
+docker run -v $(pwd):/data iroachie/headless-libreoffice:latest --convert-to csv myfile.ods
 ```
 
 Take note of the -v flag. This container expects that you mount a volume where the file you want convert is.
